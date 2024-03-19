@@ -34,7 +34,7 @@ const router = createBrowserRouter(
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact/>} />
       <Route path='user/:userId' element={<User/>} />
-      <Route loader={githubInfoLoader} path='github' element={<Github/>} />
+      <Route loader={githubInfoLoader} path='github/' element={<Github/>} />
     </Route>
   )
 )
@@ -42,5 +42,5 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
